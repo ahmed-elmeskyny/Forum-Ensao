@@ -1,0 +1,107 @@
+.header-container {
+  width: 100%;
+
+  .top-section {
+    width: 100%;
+    height: 40px;
+    background-color: #182b49;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaaaa4;
+
+    .location-FAQ {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-evenly;
+
+      .location {
+        padding: 0px 10px;
+        border-left: 1px solid #3e3e3e;
+        border-right: 1px solid #3e3e3e;
+      }
+      .faq {
+        border-right: 1px solid #3e3e3e;
+        padding-right: 10px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+
+    .social-media {
+      margin-right: 20px;
+      border-left: 1px solid #3e3e3e;
+      border-right: 1px solid #3e3e3e;
+
+      .icon {
+        color: #11b67a;
+        font-size: 15px;
+        margin: 0px 10px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      padding: 0px 20px;
+
+      .logo-text {
+        text-align: center;
+        padding: 0px 10px;
+        h3 {
+          color: #182b49;
+        }
+        h4 {
+          color: #11b67a;
+        }
+        h6 {
+          color: #aaaaa4;
+        }
+      }
+    }
+    .contact-header {
+      display: flex;
+      margin-bottom: 20px;
+      .telephone {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .phone-icon {
+          font-size: 35px;
+          color: #11b67a;
+          margin-right: 10px;
+        }
+      }
+
+      .email {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .email-icon {
+          font-size: 35px;
+          color: #11b67a;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
