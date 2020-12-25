@@ -15,7 +15,7 @@ const ScrollUp= () => {
 
     const handleScroll = ()=> {
         const offset=window.scrollY;
-        if(offset > 600 ){
+        if(offset > 500 ){
           setScroll(true);
         }
         else{

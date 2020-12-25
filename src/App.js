@@ -16,6 +16,7 @@ import Contact from "./pages/contact/contact";
 //components
 import Header from "./components/header/header";
 import ScrollUp from "./components/button-scroll/button-scroll";
+import Footer from './components/footer/footer';
 
 
 
@@ -50,6 +51,7 @@ class App extends React.Component {
            <Contact></Contact>
          </Route>
        </Switch>
+       <Footer></Footer>
        <ScrollUp></ScrollUp>
      </Router>
    )
