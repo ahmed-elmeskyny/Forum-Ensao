@@ -24,7 +24,7 @@ const slides = [
 const properties =  {
      prevArrow: <AiOutlineLeft style={{fontSize:"40px" , cursor:"pointer",position:"absolute" , color:"white"}} ></AiOutlineLeft>,
      nextArrow: <AiOutlineRight style={{fontSize:"40px" , cursor:"pointer", position:"absolute", left:"1200px" , color:"white"}}></AiOutlineRight>,
-     duration : 10000
+     duration : 2000
 }
 
 

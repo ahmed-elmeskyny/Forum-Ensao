@@ -8,10 +8,29 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
     padding: 30px 30px;
     font-size: 15px;
-    width: 20%;
+    width: 250px;
 
-    ul {
-      list-style: none;
+    h3 {
+      color: #182b49;
+      padding-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .event-text {
+      ul {
+        list-style: none;
+        font-size: 14px;
+        li {
+          padding-bottom: 10px;
+          font-weight: 500;
+          display: flex;
+          flex-direction: column;
+          span {
+            font-weight: 100;
+            color: #182b49;
+          }
+        }
+      }
     }
   }
 
@@ -31,6 +50,7 @@
 
       h1 {
         padding-bottom: 15px;
+        color: #182b49;
       }
 
       p {
@@ -40,6 +60,14 @@
 
       span {
         padding-bottom: 15px;
+        color: #07a159;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          color: #182b49;
+          text-decoration: underline #182b49;
+        }
       }
     }
   }

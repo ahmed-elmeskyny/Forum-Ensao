@@ -14,7 +14,8 @@ import Sponsor from "./pages/sponsor/sponsor";
 import Contact from "./pages/contact/contact";
 
 //components
-import Header from "./components/Header/header";
+import Header from "./components/header/header";
+import ScrollUp from "./components/button-scroll/button-scroll";
 
 
 
@@ -49,6 +50,7 @@ class App extends React.Component {
            <Contact></Contact>
          </Route>
        </Switch>
+       <ScrollUp></ScrollUp>
      </Router>
    )
  }

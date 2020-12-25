@@ -1,0 +1,19 @@
+.scroll-up {
+  position: fixed;
+  bottom: 10px;
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 25px;
+  background-color: rgba($color: #395889, $alpha: 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    color: #11b67a;
+    background-color: #263753;
+  }
+}

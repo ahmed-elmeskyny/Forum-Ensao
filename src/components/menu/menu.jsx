@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 //styling
 import "./menu.scss";
@@ -9,17 +9,35 @@ import {NavLink} from "react-router-dom";
 //react-icons
 import {AiOutlineDown} from "react-icons/ai";
 
+//assets
+import logo from "../../assets/logo/logoForum.png";
 
 
-const Menu = () => {
+
+const Menu = ({isNormal}) => {
 
     const [ open , setopen] = useState(false);
     const [ open1 , setopen1] = useState(false);
+    const [scroll , setScroll] = useState(true);
+
+    const handleScroll = ()=> {
+        const offset=window.scrollY;
+        if(offset > 300 ){
+          setScroll(false);
+        }
+        else{
+          setScroll(true);
+        }
+      }
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+      })
 
     return (
-        <div className="menu-container">
+        <div  className={ isNormal ? "menu-container"  : (scroll ? "menu-container" : "fixed-menu") }>
             <div className="menu">
-                <ul>
+                <ul> 
+                    { scroll ? null : <li><img alt="logo" src={logo} width="60px" height="60px" /> </li>}
                     <li><NavLink exact to="/" className="link">ACCEUIL</NavLink></li>
                     <li><NavLink exact to="apropos" className="link"> A PROPOS</NavLink></li>
                     <li className="dropdown" onMouseEnter={()=> setopen1(true)}>

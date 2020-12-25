@@ -6,8 +6,8 @@ import './Aceuil.scss';
 //components
 import Slider from "../../components/slides/slider";
 import Menu from "../../components/menu/menu";
-import Actualite from "../../components/actualite/actualite"
-
+import Actualite from "../../components/actualite/actualite";
+import Temoignage from "../../components/temoignage/temoignage";
 
 const Acceuil = () => {
 
@@ -16,6 +16,7 @@ const Acceuil = () => {
             <Menu></Menu>
             <Slider></Slider>
             <Actualite></Actualite>
+            <Temoignage></Temoignage>
         </div>
     )
 }
