@@ -14,6 +14,9 @@
   padding: 15px 40px;
   width: 80%;
   border-radius: 10px;
+  @media (max-width: 900px) {
+    display: none;
+  }
 
   .menu {
     ul {
@@ -79,6 +82,9 @@
   position: fixed;
   top: 0;
   z-index: 1000;
+  @media (max-width: 900px) {
+    display: none;
+  }
 
   .menu {
     padding: 0px 30px;
@@ -130,5 +136,32 @@
         }
       }
     }
+  }
+}
+
+.mobile-menu {
+  padding: 10px 20px;
+  font-size: 30px;
+  border-top: 1px solid lightgray;
+  background-color: #182b49;
+  color: #11b67a;
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+
+.fixed-mobile-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #182b49;
+  color: #11b67a;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 900px) {
+    display: none;
   }
 }

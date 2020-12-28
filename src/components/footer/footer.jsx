@@ -31,8 +31,7 @@ const Footer = () => {
                         <h6>10éme édition</h6>
                     </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, voluptatem harum est molestias earum architecto eos! Vitae deserunt omnis ut, repellat laboriosam nesciunt voluptates ad facere soluta odit. Fugit, consequuntur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est porro at repellat magnam? Aut officiis quia voluptate unde nemo laboriosam dolore labore autem quae deserunt? Distinctio voluptatum nostrum a.    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, voluptatem harum uadipisicing elit. Corporis est porro at repellat magnam? Aut officiis quia voluptate unde nemo laboriosam dolore labore autem quae deserunt? Distinctio voluptatum nostrum a.    
                 </p>
             </div>
             <div className="info-container">

@@ -23,7 +23,7 @@ const slides = [
 
 const properties =  {
      prevArrow: <AiOutlineLeft style={{fontSize:"40px" , cursor:"pointer",position:"absolute" , color:"white"}} ></AiOutlineLeft>,
-     nextArrow: <AiOutlineRight style={{fontSize:"40px" , cursor:"pointer", position:"absolute", left:"1200px" , color:"white"}}></AiOutlineRight>,
+     nextArrow: <AiOutlineRight style={{fontSize:"40px" , cursor:"pointer", position:"absolute" , right:"0px", color:"white"}}></AiOutlineRight>,
      duration : 2000
 }
 
@@ -38,7 +38,7 @@ const Slider = () => {
                         <div className="slide-text">
                             <div className="text-container">
                                 <h1>Forum Ensao Entreprises</h1>
-                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione quia error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae libero, quasi, facere voluptates distinctio vitae mollitia eos illo aliquam ducimus perferendis in itaque iure exercitationem laborum enim eveniet nihil! Itaque deleniti reiciendis placeat qui expedita? Fugiat nostrum eum harum quod et est minima dolor vero sed blanditiis.</span>
+                                <span>Lorem ipsum dolor sit amet cone repudiandae libero, quasi, facere voluptates distinctio vitae mollitia eos illo aliquam ducimus perferendis in itaque iure exercitationem laborum enim eveniet nihil! Itaque deleniti reiciendis placeat qui expedita? Fugiat nostrum eum harum quod et est minima dolor vero sed blanditiis.</span>
                             </div>
                         </div>
                     </div>

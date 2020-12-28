@@ -16,10 +16,10 @@ const Temoignage = () => {
     return (
     <div className="tem-container">
         <div className="container">
-        <div className="tem-header">
-            <h1>CE QUE LES ETUDIANTS  DISENT DE NOUS</h1>
-            <p>FeedBack des étudiants</p>
-        </div>
+            <div className="tem-header">
+               <h1>CE QUE LES ETUDIANTS  DISENT DE NOUS</h1>
+               <p>FeedBack des étudiants</p>
+            </div>
             <Slide {...properties}>   
                <div className="each-slide">
                    <p>Lorem ipsum d, iure molestias repudiandae commodi repellat asperiores facilis illum nisi dicta dignissimos! Nostrum repudiandae quis consequuntur culpa eius.</p>

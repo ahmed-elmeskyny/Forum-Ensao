@@ -8,13 +8,18 @@ import {NavLink} from "react-router-dom";
 
 //react-icons
 import {AiOutlineDown} from "react-icons/ai";
+import {RiMenu2Fill} from "react-icons/ri";
 
 //assets
 import logo from "../../assets/logo/logoForum.png";
 
+//redux
+import { connect } from "react-redux";
+import { toggle  } from "./../../redux/mobile-reducer/mobile-action";
 
 
-const Menu = ({isNormal}) => {
+
+const Menu = ({isNormal , toggle}) => {
 
     const [ open , setopen] = useState(false);
     const [ open1 , setopen1] = useState(false);
@@ -34,6 +39,7 @@ const Menu = ({isNormal}) => {
       })
 
     return (
+    <>
         <div  className={ isNormal ? "menu-container"  : (scroll ? "menu-container" : "fixed-menu") }>
             <div className="menu">
                 <ul> 
@@ -72,7 +78,16 @@ const Menu = ({isNormal}) => {
                 </ul>
             </div>
         </div>
+        <div className={ scroll ? "mobile-menu" : "fixed-mobile-menu"}>
+            <RiMenu2Fill style={{marginTop:"10px"}} onClick={()=> toggle()}></RiMenu2Fill>
+           { scroll ? null : <img alt="logo" src={logo} width="40px" height="40px" />}
+        </div>
+    </>
     )
 }
 
-export default Menu;
+const mapdispatchToProps = (dispatch) => ({
+
+    toggle : () => dispatch(toggle())
+})
+export default connect(null,mapdispatchToProps)(Menu);

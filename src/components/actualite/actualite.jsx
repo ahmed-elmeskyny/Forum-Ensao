@@ -26,7 +26,6 @@ const Actualite = () => {
                     </ul>
                 </div>
             </div> 
-            <div className="blogs">
                 <div className="blog">
                     <img alt="blog" src={image1} width="250px" height="150px"/>
                     <h1>Titre/Question</h1>
@@ -49,7 +48,6 @@ const Actualite = () => {
                     <span>Lire La suite <AiFillCaretRight style={{paddingTop:"5px" }}></AiFillCaretRight></span>
                 </div>
             </div>
-        </div>
     )
 }
 

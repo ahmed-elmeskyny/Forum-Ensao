@@ -10,9 +10,13 @@
     justify-content: space-evenly;
     .text-container {
       width: 55%;
-      h1 {
+      text-align: center;
+      t h1 {
         font-size: 55px;
         padding-bottom: 10px;
+        @media (max-width: 900px) {
+          font-size: 30px;
+        }
       }
       span {
         color: lightgray;

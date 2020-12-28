@@ -17,6 +17,7 @@ import Contact from "./pages/contact/contact";
 import Header from "./components/header/header";
 import ScrollUp from "./components/button-scroll/button-scroll";
 import Footer from './components/footer/footer';
+import MobileMenu from './components/mobile-menu/mobile-menu';
 
 
 
@@ -33,6 +34,8 @@ class App extends React.Component {
    return (
      <Router>
        <Header></Header>
+       {/* {mobile-menu} */}
+       <MobileMenu></MobileMenu>
        {/* switching between pages */}
        <Switch>
          <Route exact path="/">
